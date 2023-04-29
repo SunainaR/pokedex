@@ -1,4 +1,4 @@
-const fetchPokemon = require('./api.js');
+const fetchPokemon = require('./api');
 
 describe ("fetchPokemon function", () => {
   it('returns a promise of the useful pokemon data for charizard', async () => {
