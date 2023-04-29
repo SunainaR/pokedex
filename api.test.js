@@ -1,11 +1,8 @@
 const fetchPokemon = require('./api.js');
 
 describe ("fetchPokemon function", () => {
-  it('returns a promise of the useful pokemon data for charizard', (done) => {
-    fetchPokemon('charizard')
-    .then((pokemon) => {
+  it('returns a promise of the useful pokemon data for charizard', async () => {
+    const pokemon = await fetchPokemon('charizard')
       expect(pokemon.id).toEqual(6);
-      done();
     });
   });
-});
